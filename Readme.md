@@ -4,7 +4,7 @@
 
 In this Section, we will set up a generic Front-End Project. For this we will create a HTML, CSS and JavaScript File, connect them to each other and open up the App locally.
 
-Start by creating a Folder somewhere on your Computer and name it how you want. In our case we do "CookieTracker". Inside of that Folder create a HTML File and name it "index.html". Then open that File in a Browser of your Choice (preferrably Google Chrome). Add a Basic HTML Structure and a Heading to your Body-Tag. Do you see it in the Browser? 
+Start by creating a Folder somewhere on your Computer and name it how you want. In our case we do *CookieTracker*. Inside of that Folder create a HTML File and name it *index.html*. Then open that File in a Browser of your Choice (preferrably Google Chrome). Add a Basic HTML Structure and a Heading to your Body-Tag. Do you see it in the Browser? 
 
 
     <!DOCTYPE html>
@@ -144,7 +144,7 @@ This is what is happening in the script.
 * We are missing the increase and reset logic. 
 * The most important part belongs inside those functions. We need to display the updated score Variable. Look up "innerHTML for this" and you will need to user the scoreDisplay variable
 
-This is the Solution:
+<details><summary>This is the Solution:</summary>
 
 
     // global Score 
@@ -177,7 +177,7 @@ This is the Solution:
     // event listener on id reset
     var resetButton = document.getElementById('reset');
     resetButton.addEventListener('click', reset);
-
+</details>
 
 ## Part IV - Styling
 
