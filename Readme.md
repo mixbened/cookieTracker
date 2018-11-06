@@ -1,4 +1,6 @@
-###Cookie Tracker
+We are building a simple Web-App. Live Example: https://mixbened.github.io/cookieTracker/
+
+Have fun!
 
 ## Part I - Project Setup
 
