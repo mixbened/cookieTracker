@@ -18,7 +18,7 @@ Start by creating a Folder somewhere on your Computer and name it how you want. 
 <body>
     <h1>Hello from the Cookie Tracker</h1>
 </body>
-</html>´´´
+</html>```
 
 Continue by creating a CSS File named style.css and a JavaScript File named script.js.
 
@@ -38,14 +38,14 @@ Now we have to connect both Files to our HTML. The CSS is linked with the link T
 
     <script src="script.js"></script>
 </body>
-</html>````
+</html>```
 
 Note: We are adding the Script at the Bottom of the Bottom because we want our HTML to load before the Script.
 
 For testing the Link, we will add some CSS and JS to those Files and see if the Code gets applied.
 
 cookieTracker/script.js
-```alert('script connected!')````
+```alert('script connected!')```
 
 cookieTracker/style.css
 ```body {
