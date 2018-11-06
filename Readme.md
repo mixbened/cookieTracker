@@ -24,34 +24,34 @@ Continue by creating a CSS File named style.css and a JavaScript File named scri
 
 Now we have to connect both Files to our HTML. The CSS is linked with the link Tag. Reference the Source in the src-Attribute. The JS is linked via the Script-Tag. Reference the Source via the href-Attribute.
 
-```<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello from the Cookie Tracker</h1>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Hello from the Cookie Tracker</h1>
 
-    <script src="script.js"></script>
-</body>
-</html>```
+        <script src="script.js"></script>
+    </body>
+    </html>
 
 Note: We are adding the Script at the Bottom of the Bottom because we want our HTML to load before the Script.
 
 For testing the Link, we will add some CSS and JS to those Files and see if the Code gets applied.
 
 cookieTracker/script.js
-```alert('script connected!')```
+    alert('script connected!')
 
 cookieTracker/style.css
-```body {
-    background: #444;
-    font-family: 'Avenir';
-}```
+    body {
+        background: #444;
+        font-family: 'Avenir';
+    }
 
 When you refresh the Page, you should see the Alert by the Browser. Moreover, you should see the Styles we changed. If you do so, great. You finished this part. If you don't have a look at those references:
 
@@ -75,12 +75,12 @@ h1 Tag with Content of your choice. We will not use an ID or Class for this Elem
 Then add a span, that will hold our score. Furthermore, we need two Buttons, one of them as increaser and the other one to reset the Score.
 
 cookieTracker/index.html
-```
+
     <span id="score">0</span>
 
     <button class="btn" id="tracker">Hit!</button>
     <button class="btn" id="clear">Clear</button>
-```
+
 
 Got it? Nice Work.
 
@@ -100,38 +100,38 @@ When we hit the Button, we want the Score to increase by one every time. When we
 Try to model those functions on your own. This is the Solution without any Logic. Can you complete it?
 
 cookieTracker/script.js
-```
-// global Score 
-var score = 0;
 
-// grab Element to show the score
-var scoreDisplay = document.getElementById('score');
+    // global Score 
+    var score = 0;
+
+    // grab Element to show the score
+    var scoreDisplay = document.getElementById('score');
 
 
-// function for increasing the Score
-function increaser(){
-    // increase variable score by one
+    // function for increasing the Score
+    function increaser(){
+        // increase variable score by one
 
-    // update the scoreDisplay Element
-    
-}
+        // update the scoreDisplay Element
+        
+    }
 
-// reset function
-function reset(){
-    // set score equal to 0
+    // reset function
+    function reset(){
+        // set score equal to 0
 
-    // update the scoreDisplay Element
+        // update the scoreDisplay Element
 
-}
+    }
 
-// event listener on id tracker
-var trackerButton = document.getElementById('tracker');
-trackerButton.addEventListener('click', increaser)
+    // event listener on id tracker
+    var trackerButton = document.getElementById('tracker');
+    trackerButton.addEventListener('click', increaser)
 
-// event listener on id reset
-var resetButton = document.getElementById('reset');
-resetButton.addEventListener('click', reset);
-```
+    // event listener on id reset
+    var resetButton = document.getElementById('reset');
+    resetButton.addEventListener('click', reset);
+
 
 As you can see in the Comments, we are just missing 4 Lines of Code.
 This is what is happening in the script. 
@@ -144,38 +144,38 @@ This is what is happening in the script.
 
 This is the Solution:
 
-```
-// global Score 
-var score = 0;
 
-// grab Element to show the score
-var scoreDisplay = document.getElementById('score');
+    // global Score 
+    var score = 0;
+
+    // grab Element to show the score
+    var scoreDisplay = document.getElementById('score');
 
 
-// function for increasing the Score
-function increaser(){
-    // increase variable score by one
-    score++;
-    // update the scoreDisplay Element
-    scoreDisplay.innerHTML = score;
-}
+    // function for increasing the Score
+    function increaser(){
+        // increase variable score by one
+        score++;
+        // update the scoreDisplay Element
+        scoreDisplay.innerHTML = score;
+    }
 
-// reset function
-function reset(){
-    // set score equal to 0
-    score = 0;
-    // update the scoreDisplay Element
-    scoreDisplay.innerHTML = score;
-}
+    // reset function
+    function reset(){
+        // set score equal to 0
+        score = 0;
+        // update the scoreDisplay Element
+        scoreDisplay.innerHTML = score;
+    }
 
-// event listener on id tracker
-var trackerButton = document.getElementById('tracker');
-trackerButton.addEventListener('click', increaser)
+    // event listener on id tracker
+    var trackerButton = document.getElementById('tracker');
+    trackerButton.addEventListener('click', increaser)
 
-// event listener on id reset
-var resetButton = document.getElementById('reset');
-resetButton.addEventListener('click', reset);
-```
+    // event listener on id reset
+    var resetButton = document.getElementById('reset');
+    resetButton.addEventListener('click', reset);
+
 
 ## Part IV - Styling
 
