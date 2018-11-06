@@ -1,14 +1,17 @@
 body {
-    background: darkblue;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Avenir';
     color: #eee;
-    margin: 10% 20%;
+    margin: 5% 20%;
     /* centers the Buttons  */
     text-align: center;
 }
 
 h1 {
     text-align: center;
+    padding: 0.5em;
 }
 
 #score {
@@ -21,14 +24,17 @@ h1 {
 }
 
 #tracker {
-    padding: 3em;
+    padding: 1.5em;
     /* shift the other button to the next Line */
     display: block;
     /* centering */
     margin: 0 auto;
     /* circle */
     border-radius: 100%;
-
+    border: 0;
+    box-shadow: 1px 1px 1px 1px #0083B0;
+    background: #eee;
+    font-size: 1.5em;
 }
 
 #reset {

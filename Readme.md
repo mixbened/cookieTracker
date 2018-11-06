@@ -141,8 +141,8 @@ This is what is happening in the script.
 * We declare a variable, that holds the score
 * We define two functions. One for increasing, one for reseting it
 * Then we add two Event-Listeners and call the two functions on that Event
-* We are missing the increase and reset logic. 
-* The most important part belongs inside those functions. We need to display the updated score Variable. Look up "innerHTML for this" and you will need to user the scoreDisplay variable
+* Then there is the logic inside the functions, but it's missing
+* The most important part belongs inside those functions. We need to display the updated score Variable. Look up *innerHTML* for this and you will need to user the scoreDisplay variable
 
 <details><summary>This is the Solution:</summary>
 
@@ -183,13 +183,55 @@ This is what is happening in the script.
 
 Let's add some nice CSS to our Page:
 
-Gradient for the Background, color and font-family:
+Gradient for the Background, color and font-family. We are also adding margin to the Body, so that we'll have a gap between the Frame and the Content:
 
-Center the Elements
+    body {
+        background: #00B4DB;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-family: 'Avenir';
+        color: #eee;
+        margin: 5% 20%;
+        /* centers the Buttons  */
+        text-align: center;
+    }
 
 Style the Score
 
+    #score {
+        /* increase font-size */
+        font-size: 10em;
+        /* make block element that buttons get shifted to the next line */
+        display: block;
+        /* center the content */
+        text-align: center;
+    }
+
 Design the Buttons
+
+    #tracker {
+        padding: 1.5em;
+        /* shift the other button to the next Line */
+        display: block;
+        /* centering */
+        margin: 0 auto;
+        /* circle */
+        border-radius: 100%;
+        border: 0;
+        box-shadow: 1px 1px 1px 1px #0083B0;
+        background: #eee;
+        font-size: 1.5em;
+    }
+
+    #reset {
+        /* space to hit button */
+        margin-top: 15em;
+        background: transparent;
+        color: #eee;
+        /* corners round */
+        border-radius: 5px;
+        padding: 0.5em 1em;
+    }
 
 Alright, thats our Cookie Tracker App! With this App you learned how to combine basic concepts of HTML, CSS and JS.
 
