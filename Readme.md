@@ -45,9 +45,11 @@ Note: We are adding the Script at the Bottom of the Bottom because we want our H
 For testing the Link, we will add some CSS and JS to those Files and see if the Code gets applied.
 
 cookieTracker/script.js
+    
     alert('script connected!')
 
 cookieTracker/style.css
+
     body {
         background: #444;
         font-family: 'Avenir';
