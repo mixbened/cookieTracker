@@ -7,18 +7,18 @@ In this Section, we will set up a generic Front-End Project. For this we will cr
 Start by creating a Folder somewhere on your Computer and name it how you want. In our case we do "CookieTracker". Inside of that Folder create a HTML File and name it "index.html". Then open that File in a Browser of your Choice (preferrably Google Chrome). Add a Basic HTML Structure and a Heading to your Body-Tag. Do you see it in the Browser? 
 
 
-```<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello from the Cookie Tracker</h1>
-</body>
-</html>```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Hello from the Cookie Tracker</h1>
+    </body>
+    </html>
 
 Continue by creating a CSS File named style.css and a JavaScript File named script.js.
 
