@@ -1,4 +1,4 @@
-#Cookie Tracker
+###Cookie Tracker
 
 ## Part I - Project Setup
 
