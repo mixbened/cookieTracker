@@ -92,12 +92,12 @@ Ok, what do we need to make the Game work?
 
 When we hit the Button, we want the Score to increase by one every time. When we hit the clear Button we want the score to reset (=0).
 
-*A variable that represents the score (score)
-*A function that increases the score (increaser)
-*A function that resets the score (reset)
-*An Event-Listener, that runs increaser
-*An Event-Listener, that runs reset
-*let the span display the Global Variable Score
+* A variable that represents the score (score)
+* A function that increases the score (increaser)
+* A function that resets the score (reset)
+* An Event-Listener, that runs increaser
+* An Event-Listener, that runs reset
+* let the span display the Global Variable Score
 
 Try to model those functions on your own. This is the Solution without any Logic. Can you complete it?
 
