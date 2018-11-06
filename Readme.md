@@ -18,7 +18,7 @@ Start by creating a Folder somewhere on your Computer and name it how you want. 
 <body>
     <h1>Hello from the Cookie Tracker</h1>
 </body>
-</html>```
+</html>´´´
 
 Continue by creating a CSS File named style.css and a JavaScript File named script.js.
 
