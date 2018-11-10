@@ -83,7 +83,7 @@ cookieTracker/index.html
     <span id="score">0</span>
 
     <button class="btn" id="tracker">Hit!</button>
-    <button class="btn" id="clear">Clear</button>
+    <button class="btn" id="reset">Clear</button>
 
 
 Got it? Nice Work.
